@@ -62,6 +62,7 @@ end
 #@time DNP(Q, c, l, u)
 
 #Second-Order Cone Programming
+#use SOCP constraints to approximate SDP constraints
 #function SOCP(Q, c, l, u, limit, theta, time_limit)
 function SOCP(Q, c, l, u, limit, theta, time_rate)#set time limitation be the time_rate% of the consumed time of DNP 
     time_limit = R_DNP[2]*time_rate
