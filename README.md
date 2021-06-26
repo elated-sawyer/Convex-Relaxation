@@ -1,2 +1,2 @@
 # Convex-Relaxation
-Solving DNP via SOCP
+QP DNP SOCP
