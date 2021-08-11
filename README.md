@@ -6,4 +6,4 @@
 
 **Plots.jl**: Plot figures based on data files, "Records for Iterations.csv", "Results for Solvers".
 
-**Data files**: Records for Iterations.csv", "Results for Solvers"
+**Data files**: "Records for Iterations.csv", "Results for Solvers"
