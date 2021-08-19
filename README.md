@@ -6,4 +6,6 @@
 
 **Plots.jl**: Plot figures based on data files, "Records for Iterations.csv", "Results for Solvers".
 
-**Data files**: "Records for Iterations.csv", "Results for Solvers"
+**Data Files**: "Records for Iterations.csv", "Results for Solvers"
+
+**Experimental Instances** are from Prof. Burer's repository--*sburer/BoxQP_instances*(link:https://github.com/sburer/BoxQP_instances)
