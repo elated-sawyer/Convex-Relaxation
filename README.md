@@ -8,4 +8,4 @@
 
 **Data Files**: "Records for Iterations.csv", "Results for Solvers"
 
-**Experimental Instances** are from Prof. Burer's repository--*sburer/BoxQP_instances*(link:https://github.com/sburer/BoxQP_instances)
+**Experimental Instances** are from Prof. Burer's repository--*sburer/BoxQP_instances*(link: https://github.com/sburer/BoxQP_instances)
