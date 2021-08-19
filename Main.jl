@@ -20,9 +20,6 @@ for (root, dirs, files) in walkdir("./Experiments/BoxQP_instances-master/basic/"
         #other parameters
         l = zeros(n)
         u = ones(n)
-        #hyperparameter in SOCP
-        limit = 30 
-        theta = -1e-8 #original -1e-8
         R_QP = @timed QP(n, Q, c, l, u)
         CSV.write("EXP_Original_problem.csv", [(File_name = file, Time_QP = R_QP[2], objective_value_QP = R_QP[1][1],  termination_status_QP = R_QP[1][2])],  append = true)
     end
@@ -41,9 +38,6 @@ for (root, dirs, files) in walkdir("./Experiments/BoxQP_instances-master/basic/"
         #other parameters
         l = zeros(n)
         u = ones(n)
-        #hyperparameter in SOCP
-        limit = 30 
-        theta = -1e-8
         R_RLT = @timed RLT(n, Q, c, l, u)
         CSV.write("EXP_RLT_problem.csv", [(File_name = file, Time_RLT = R_RLT[2], objective_value_RLT = R_RLT[1][1],  termination_status_RLT = R_RLT[1][2])],  append = true)
     end
@@ -62,9 +56,6 @@ for (root, dirs, files) in walkdir("./Experiments/BoxQP_instances-master/basic/"
         #other parameters
         l = zeros(n)
         u = ones(n)
-        #hyperparameter in SOCP
-        limit = 30 
-        theta = -1e-8 #original -1e-8
         R_DNP = @timed DNP(n, Q, c, l, u)
         CSV.write("EXP_DNP_problem.csv", [(File_name = file, Time_DNP = R_DNP[2], objective_value_DNP = R_DNP[1][1],  termination_status_DNP = R_DNP[1][2])],  append = true)
     end
@@ -106,8 +97,6 @@ for (root, dirs, files) in walkdir("./Experiments/BoxQP_instances-master/basic/"
         #other parameters
         l = zeros(n)
         u = ones(n)
-        #hyperparameter in SOCP
-        limit = 30 
         R_DNP = @timed DNP_TimLim(n, Q, c, l, u)
         CSV.write("EXP_DNPTimLim_problem.csv", [(File_name = file, Time_DNP = R_DNP[2], objective_value_DNP = R_DNP[1][1],  termination_status_DNP = R_DNP[1][2], primal_status_DNP = R_DNP[1][3])],  append = true)
     end
